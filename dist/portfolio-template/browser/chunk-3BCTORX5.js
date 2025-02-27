@@ -1,1 +1,0 @@
-var I={production:!1,git_key:"<YOUR_GIT_TOKEN>",git_username:"<YOUR_GITHUB_USERNAME>",firebaseConfig:{apiKey:"<FIREBASE_CONFIG>",authDomain:"<FIREBASE_CONFIG>",projectId:"<FIREBASE_CONFIG>",storageBucket:"<FIREBASE_CONFIG>",messagingSenderId:"<FIREBASE_CONFIG>",appId:"<FIREBASE_CONFIG>",measurementId:"<FIREBASE_CONFIG>"}};export{I as a};
