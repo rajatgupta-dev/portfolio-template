@@ -1,0 +1,85 @@
+<!-- Experience -->
+<div class="relative min-h-screen flex flex-col overflow-hidden antialiased">
+    <div class="flex flex-col justify-center">
+        
+        <div class="flex flex-col md:flex-row w-full">
+            <div class="w-full md:w-1/2 flex justify-center items-center">
+                <img alt="Graduation cap illustration" height="225" src="https://storage.googleapis.com/a1aa/image/fzlJAhtHrfhSKEUqqolmOuQMQ8vXSjMh306mzdFxB3lcMFuTA.jpg" width="225"/>
+            </div>
+            <div class="w-full md:w-1/2 flex flex-col items-center md:items-start justify-center">
+                <h1 class="text-4xl font-bold">Experience</h1>
+                <p class="text-lg text-center md:text-left">Web Application Development</p>
+                <div class="flex flex-wrap space-x-4 my-2 px-10 md:px-0 justify-center items-center gap-3 lg:gap-1">
+                    <i class="fab fa-html5  text-2xl text-orange-500 bg-white shadow-lg px-1 rounded-md"></i>
+                    <i class="fa-brands fa-bootstrap  text-2xl text-indigo-500 bg-white shadow-lg px-1 rounded-md"></i>
+                    <i class="fab fa-js  text-2xl text-yellow-500 bg-white shadow-lg px-1 rounded-md"></i>
+                    <i class="fa-brands fa-angular  text-2xl text-red-500 bg-white shadow-lg px-1 rounded-md"></i>
+                    <i class="fa-brands fa-npm  text-2xl text-red-500 bg-white shadow-lg px-1 rounded-md"></i>
+                    <i class="fa-brands fa-node  text-2xl text-green-500 bg-white shadow-lg px-1 rounded-md"></i>
+                    <i class="fa-brands fa-git-alt  text-2xl text-orange-600 bg-white shadow-lg px-1 rounded-md"></i>
+                    <i class="fa-brands fa-paypal  text-2xl text-blue-800 bg-white shadow-lg px-1 rounded-md"></i>
+                    <i class="fa-brands fa-cpanel  text-2xl text-amber-600 bg-white shadow-lg px-1 rounded-md"></i>
+                    <i class="fa-brands fa-stack-overflow  text-2xl text-orange-500 bg-white shadow-lg px-1 rounded-md"></i>                       
+                </div>
+            </div>
+        </div>
+        <div class="w-full py-5 px-3 md:px-10">
+            <!-- Vertical Timeline #3 -->
+            <div class="space-y-8 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:ml-[11.65rem] md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-slate-300 before:to-transparent">
+                
+                <!-- Item #1 -->
+                <div class="relative"><div class="md:flex items-center md:space-x-4"></div></div>
+                
+                <!-- Item #2 -->
+                <div class="relative" *ngFor="let exp of expData">
+                    <div class="md:flex items-center md:space-x-4 mb-3">
+                        <div class="flex items-center space-x-4 md:space-x-2 md:space-x-reverse">
+                            <!-- Icon -->
+                            <div class="flex items-center justify-center w-10 h-10 rounded-full p-1 bg-white shadow md:order-1">
+                                <img class="rounded-full" [src]="exp.img" alt="">
+                            </div>
+                            <!-- Date -->
+                            <div class="flex-col gap-2 hidden md:flex">
+                                <time class="text-sm font-medium inline-flex items-center justify-center text-emerald-600 bg-emerald-100 rounded-full w-40">{{exp.to}}</time>
+                                <time class="text-sm font-medium inline-flex items-center justify-center text-emerald-600 bg-emerald-100 rounded-full w-40">From - {{exp.from}}</time>
+                            </div>
+                            <time class="text-sm font-medium inline-flex items-center justify-center text-emerald-600 bg-emerald-100 rounded-full w-56 py-1 md:hidden">{{exp.from}} - {{exp.to}}</time>
+                        </div>
+                        <!-- Title -->
+                        <div class="font-medium mb-1 sm:mb-0 ml-14">{{exp.comapny_name}}</div>
+                    </div>
+                    <!-- Card -->
+                    <div class="bg-white p-4 rounded border border-slate-200 text-slate-500 shadow ml-14 md:ml-56">
+                        <ul>
+                            <li>Location - {{exp.location}}</li>
+                            <li>Position - {{exp.position}}</li>
+                            <li>No. of Projects - {{exp.no_of_projects}}</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Item #1 -->
+                <div class="relative">
+                    <div class="md:flex items-center md:space-x-4">
+                        <div class="flex items-center space-x-4 md:space-x-2 md:space-x-reverse">
+                            <!-- Icon -->
+                            <div class="flex items-center justify-center w-10 h-10 rounded-full bg-white shadow md:order-1">
+                                <svg class="fill-emerald-500" xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+                                    <path d="M8 0a8 8 0 1 0 8 8 8.009 8.009 0 0 0-8-8Zm0 12a4 4 0 1 1 0-8 4 4 0 0 1 0 8Z" />
+                                </svg>
+                            </div>
+                            <!-- Date -->
+                            <div class="w-40 "></div>
+                            <time class="text-sm font-medium inline-flex items-center justify-center text-emerald-600 bg-emerald-100 rounded-full w-56 py-1 md:hidden">Jan 15,2020 - Sept 21, 2021</time>
+
+                        </div>
+                        <!-- Title -->
+                        <div class="font-medium mb-1 sm:mb-0 ml-14">Journey Started</div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- End: Vertical Timeline #4-->
+        </div>
+    </div>
+</div>
